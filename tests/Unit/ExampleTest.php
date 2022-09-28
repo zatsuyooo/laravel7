@@ -13,6 +13,7 @@ class ExampleTest extends TestCase
      */
     public function testBasicTest()
     {
+        factory(\App\Entities\User::class)->create();
         $this->assertTrue(true);
     }
 }
