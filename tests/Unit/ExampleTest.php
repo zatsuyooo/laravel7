@@ -3,6 +3,7 @@
 namespace Tests\Unit;
 
 use Tests\TestCase;
+use App\Entities\User;
 
 class ExampleTest extends TestCase
 {
@@ -13,7 +14,7 @@ class ExampleTest extends TestCase
      */
     public function testBasicTest()
     {
-        factory(\App\Entities\User::class)->create();
+        factory(User::class)->create();
         $this->assertTrue(true);
     }
 }
